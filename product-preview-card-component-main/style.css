@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+
+
+
+:root{
+  /* !Primary */
+  --Darkcyan: hsl(158, 36%, 37%);
+  --Cream: hsl(30, 38%, 92%);
+
+  /* !Neutral */
+  --Verydarkblue: hsl(212, 21%, 14%);
+  --Darkgrayishblue: hsl(228, 12%, 48%);
+  --White: hsl(0, 0%, 100%);
+
+  /* !Fonts */
+  --Mono: 'Montserrat';
+  --500: 500;
+  --700:700;
+
+  --Fra:'Fraunces';
+  --700: 700;
+}
+
+p{
+  font-size: 14px;
+}
+
+img{
+  max-width: 100%;
+}
+
+body{
+  background-color: var(--Cream);
+}
+
+.container{
+  display: flex;
+  width: 560px;
+  margin:110px auto;
+}
+
+.container .left-img img{
+  border-radius: 10px 0px 0px 10px;
+  height: 100%;
+
+}
+
+.right-content{
+  background-color: var(--White);
+  border-radius: 0px 10px 0px 0px ;
+}
+
+.heading{
+  margin: 16px 16px;
+}
+
+.heading h2{
+  font-size: 12px;
+  font-family: var(--Mono);
+  color: var(--Darkgrayishblue);
+  letter-spacing: 5px;
+}
+
+article.body{
+  margin:16px 16px;
+}
+
+article.body h2 {
+  font-family: var(--Fra);
+  font-size: 29px;
+}
+
+article.text{
+  margin: 16px 16px;
+}
+
+article.text p{
+  font-family: var(--Mono);
+  color: var(--Darkgrayishblue);
+  line-height: 1.5;
+}
+
+ul{
+  margin: 16px 16px;
+  display: flex;
+  align-items: center;
+  
+}
+
+ul li{
+  list-style-type: none;
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+}
+
+ul li span{
+  color: var(--Darkcyan);
+  font-family: var(--Fra);
+  font-weight: var(--500);
+  font-size: 25px;
+}
+
+ul li strike{
+  color: var(--Darkgrayishblue);
+  font-family: var(--Mono);
+  font-size: 12px;
+}
+
+.button{
+  margin-left: 16px;
+  margin-right: 15px;
+  margin-bottom: 20px;
+  width: 250px;
+  border-radius: 6px;
+  background-color: var(--Darkcyan);
+  color: var(--White);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.button:hover{
+  cursor: pointer;
+  background-color:hsl(158, 71%, 16%) ;
+}
+
+.button h4{
+  font-family: var(--Mono);
+  font-size: 14px;
+}
+
+.cart{
+  padding-right: 10px;
+}
+
+
+
+.attribution { font-size: 18px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media (max-width:680px){
+  
+ 
+  .container{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+  
+  }
+
+  
+}
+
